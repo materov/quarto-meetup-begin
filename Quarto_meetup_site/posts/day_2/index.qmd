@@ -62,11 +62,11 @@ draft: false
 
 ## Примеры документов и репозитории {#примеры-документов-и-репозитории}
 
-[![Пример блога / <a href="https://github.com/quarto-meetup-begin/materials/blog">ссылка на репозиторий</a> с примером блога](blog_sample.png)](https://quarto-meetup-begin-blog.netlify.app){target="_blank"}
+[![Пример блога / <a href="https://github.com/materov/quarto-meetup-begin/tree/main/materials/blog">ссылка на репозиторий</a> с примером блога](blog_sample.png)](https://quarto-meetup-begin-blog.netlify.app){target="_blank"}
 
-[![Пример отчета / <a href="https://github.com/quarto-meetup-begin/materials/report">ссылка на репозиторий</a> с примером отчета](report_sample.png)](https://quarto-meetup-begin-report.netlify.app){target="_blank"}
+[![Пример отчета / <a href="https://github.com/materov/quarto-meetup-begin/tree/main/materials/report">ссылка на репозиторий</a> с примером отчета](report_sample.png)](https://quarto-meetup-begin-report.netlify.app){target="_blank"}
 
-[![Пример интерактивной книги / <a href="https://github.com/quarto-meetup-begin/materials/book">ссылка на репозиторий</a> с примером интерактивной книги](book_sample.png)](https://quarto-meetup-begin-book.netlify.app){target="_blank"}
+[![Пример интерактивной книги / <a href="https://github.com/materov/quarto-meetup-begin/tree/main/materials/book">ссылка на репозиторий</a> с примером интерактивной книги](book_sample.png)](https://quarto-meetup-begin-book.netlify.app){target="_blank"}
 
 ## Локализация PDF
 
