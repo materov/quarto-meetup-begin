@@ -1,0 +1,29 @@
+---
+title: "Обзор и начало работы с Quarto"
+author: "Е.Н. Матеров"
+date: "2023-03-04"
+categories: [Quarto, лекция]
+image: "quarto.jpeg"
+# анимированные иконки
+# https://github.com/jmgirard/lordicon
+---
+
+Добро пожаловать! {{< li lupuorrc trigger=loop speed=3.0 delay=1000 >}}	
+
+[Quarto](https://quarto.org/){target="_blank"} -- это платформа научных публикаций с открытым исходным кодом, которая изначально поддерживает [R](https://www.r-project.org/){target="_blank"}, [Python](https://www.python.org/){target="_blank"}, [Julia](https://julialang.org/){target="_blank"} и [Observable JS](https://observablehq.com/){target="_blank"}. Quarto -- следующее поколение RMarkdown, которое было ориентировано на пользователей R. С помощью Quarto можно создавать документы, книги, презентации, блоги или другие онлайн-ресурсы, сохранять результат в Word, PDF, ePub, комбинируя текст, элементы кода, рисунки.
+
+## Обзор Quarto и начало работы
+
+[![В презентации будет сделан обзор Quarto, показано, как установить и начать работу с Quarto. Также, будет кратко рассмотрена структура документов Quarto, возможности для интернет-публикации, сделано сравнение с существующими инструментами, даны ссылки на полезные материалы по Quarto.](day_1.png)](https://quarto-meetup-begin-presentation.netlify.app "Митап 4 марта 2023 г."){preview-link="false" style="text-align: center" target="_blank"}
+
+
+::: {.callout-tip icon=false}
+
+## Совет
+
+Для просмотра слайдов в полноэкранном режиме после открытия страницы необходимо нажать {{< kbd f >}}. Для включения режима указателя нажмите {{< kbd q >}} во время просмотра слайдов.
+
+:::
+
+
+ 

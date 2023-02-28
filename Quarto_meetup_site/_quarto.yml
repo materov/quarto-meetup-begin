@@ -1,0 +1,33 @@
+project:
+  type: website
+  preview:
+    port: 7777
+
+lang: ru
+website:
+  title: "meetup"
+  site-url: https://www.myblogexample.io
+  description: "Серия meetup'ов по Quarto"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/materov/quarto-meetup-begin
+  page-footer: 
+    border: false
+    left: "Создано с помощью [Quarto](https://quarto.org/) | Размещено на [Netlify](https://www.netlify.com)"
+    right: "© 2023 | Е.Н. Матеров"
+  favicon: "logo.png"
+format:
+  html:
+    theme:
+      light: [flatly, theme.scss]
+      dark: [darkly, theme.scss]
+
+comments: 
+    utterances:
+      repo: materov/quarto-meetup-begin-comments
+
+language:
+  title-block-published: "Дата митапа"
+

@@ -1,0 +1,29 @@
+---
+title: "reveal.js презентации в Quarto"
+author: "Е.Н. Матеров"
+date: "2023-03-18"
+categories: [Quarto, практическое занятие]
+image: "reveal_js.png"
+draft: false
+---
+
+Третий митап посвящен созданию презентаций в Quarto на основе [Revealjs](https://quarto.org/docs/presentations/revealjs/){target="_blank"}. {{< li etwtznjn trigger=loop speed=2.0 delay=1000 >}}
+
+## Примеры шаблонов презентаций {#примеры-шаблонов-презентаций}
+
+| Автор           | Пример                                                                                                                      | Код                                                                                                                        |
+|------------------------|------------------------|------------------------|
+| Quarto          | [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/demo/){target="_blank"}                               | [страница](https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd){target="_blank"} |
+| Emil Hvitfeldt  | [iFrames](https://emilhvitfeldt.github.io/quarto-iframe-examples/#/section){target="_blank"}                                | [страница](https://github.com/EmilHvitfeldt/quarto-iframe-examples){target="_blank"}                                       |
+| Emil Hvitfeldt  | [leterbox](https://emilhvitfeldt.github.io/quarto-revealjs-letterbox/#/title-slide){target="_blank"}                        | [страница](https://github.com/EmilHvitfeldt/quarto-revealjs-letterbox){target="_blank"}                                    |
+| Emil Hvitfeldt  | [RoughNotation](https://emilhvitfeldt.github.io/quarto-roughnotation/#/title-slide){target="_blank"}                        | [страница](https://github.com/EmilHvitfeldt/quarto-roughnotation){target="_blank"}                                         |
+| Emil Hvitfeldt  | [Seasons](https://emilhvitfeldt.github.io/quarto-revealjs-seasons/#/section){target="_blank"}                               | [страница](https://github.com/EmilHvitfeldt/quarto-revealjs-seasons){target="_blank"}                                      |
+| Emil Hvitfeldt  | [inverse](https://emilhvitfeldt.github.io/quarto-revealjs-inverse/#/title-slide){target="_blank"}                           | [страница](https://github.com/EmilHvitfeldt/quarto-revealjs-inverse){target="_blank"}                                      |
+| Emil Hvitfeldt  | [Snow](https://emilhvitfeldt.github.io/quarto-snow/#/title-slide){target="_blank"}                                          | [страница](https://github.com/EmilHvitfeldt/quarto-snow){target="_blank"}                                                  |
+| Emil Hvitfeldt  | [Blackboard](https://github.com/EmilHvitfeldt/quarto-blackboard-theme){target="_blank"}                                     |                                                                                                                            |
+| Bob Rudis       | [Organization Boilerplate Template](https://hrbrmstr.github.io/quarto-organization-template/#/title-slide){target="_blank"} | [страница](https://github.com/hrbrmstr/quarto-organization-template){target="_blank"}                                      |
+| Mickaël Canouil | [Coeos](https://m.canouil.fr/quarto-revealjs-coeos/#/title-slide){target="_blank"}                                          | [страница](https://github.com/mcanouil/quarto-revealjs-coeos){target="_blank"}                                             |
+| Beatriz Milz    | [Quarto R-Ladies Theme](https://beatrizmilz.github.io/quarto-rladies-theme/#/title-slide){target="_blank"}                  | [страница](https://github.com/beatrizmilz/quarto-rladies-theme){target="_blank"}                                           |
+| Meghan Hall     | [Streamling with R](https://meghan.rbind.io/slides/neair/neair.html#/title-slide){target="_blank"}                          | [страница](https://meghan.rbind.io/blog/quarto-slides/){target="_blank"}                                                   |
+
+Больше примеров можно найти на странице [Awesome Quarto](https://github.com/mcanouil/awesome-quarto#presentations){target="_blank"}.

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>meetup</title>
+<link>https://www.myblogexample.io/index.html</link>
+<atom:link href="https://www.myblogexample.io/index.xml" rel="self" type="application/rss+xml"/>
+<description>Серия meetup&#39;ов по Quarto</description>
+<generator>quarto-1.3.228</generator>
+<lastBuildDate>Fri, 17 Mar 2023 17:00:00 GMT</lastBuildDate>
+<item>
+  <title>reveal.js презентации в Quarto</title>
+  <dc:creator>Е.Н. Матеров</dc:creator>
+  <link>https://www.myblogexample.io/posts/day_3/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Третий митап посвящен созданию презентаций в Quarto на основе <a href="https://quarto.org/docs/presentations/revealjs/" target="_blank">Revealjs</a>. <lord-icon speed="2.0" delay="1000" src="https://cdn.lordicon.com/etwtznjn.json" trigger="loop"></lord-icon></p>
+<section id="примеры-шаблонов-презентаций" class="level2">
+<h2 class="anchored" data-anchor-id="примеры-шаблонов-презентаций">Примеры шаблонов презентаций</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Автор</th>
+<th>Пример</th>
+<th>Код</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Quarto</td>
+<td><a href="https://quarto.org/docs/presentations/revealjs/demo/" target="_blank">Quarto Presentations</a></td>
+<td><a href="https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd" target="_blank">страница</a></td>
+</tr>
+<tr class="even">
+<td>Emil Hvitfeldt</td>
+<td><a href="https://emilhvitfeldt.github.io/quarto-iframe-examples/#/section" target="_blank">iFrames</a></td>
+<td><a href="https://github.com/EmilHvitfeldt/quarto-iframe-examples" target="_blank">страница</a></td>
+</tr>
+<tr class="odd">
+<td>Emil Hvitfeldt</td>
+<td><a href="https://emilhvitfeldt.github.io/quarto-revealjs-letterbox/#/title-slide" target="_blank">leterbox</a></td>
+<td><a href="https://github.com/EmilHvitfeldt/quarto-revealjs-letterbox" target="_blank">страница</a></td>
+</tr>
+<tr class="even">
+<td>Emil Hvitfeldt</td>
+<td><a href="https://emilhvitfeldt.github.io/quarto-roughnotation/#/title-slide" target="_blank">RoughNotation</a></td>
+<td><a href="https://github.com/EmilHvitfeldt/quarto-roughnotation" target="_blank">страница</a></td>
+</tr>
+<tr class="odd">
+<td>Emil Hvitfeldt</td>
+<td><a href="https://emilhvitfeldt.github.io/quarto-revealjs-seasons/#/section" target="_blank">Seasons</a></td>
+<td><a href="https://github.com/EmilHvitfeldt/quarto-revealjs-seasons" target="_blank">страница</a></td>
+</tr>
+<tr class="even">
+<td>Emil Hvitfeldt</td>
+<td><a href="https://emilhvitfeldt.github.io/quarto-revealjs-inverse/#/title-slide" target="_blank">inverse</a></td>
+<td><a href="https://github.com/EmilHvitfeldt/quarto-revealjs-inverse" target="_blank">страница</a></td>
+</tr>
+<tr class="odd">
+<td>Emil Hvitfeldt</td>
+<td><a href="https://emilhvitfeldt.github.io/quarto-snow/#/title-slide" target="_blank">Snow</a></td>
+<td><a href="https://github.com/EmilHvitfeldt/quarto-snow" target="_blank">страница</a></td>
+</tr>
+<tr class="even">
+<td>Emil Hvitfeldt</td>
+<td><a href="https://github.com/EmilHvitfeldt/quarto-blackboard-theme" target="_blank">Blackboard</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Bob Rudis</td>
+<td><a href="https://hrbrmstr.github.io/quarto-organization-template/#/title-slide" target="_blank">Organization Boilerplate Template</a></td>
+<td><a href="https://github.com/hrbrmstr/quarto-organization-template" target="_blank">страница</a></td>
+</tr>
+<tr class="even">
+<td>Mickaël Canouil</td>
+<td><a href="https://m.canouil.fr/quarto-revealjs-coeos/#/title-slide" target="_blank">Coeos</a></td>
+<td><a href="https://github.com/mcanouil/quarto-revealjs-coeos" target="_blank">страница</a></td>
+</tr>
+<tr class="odd">
+<td>Beatriz Milz</td>
+<td><a href="https://beatrizmilz.github.io/quarto-rladies-theme/#/title-slide" target="_blank">Quarto R-Ladies Theme</a></td>
+<td><a href="https://github.com/beatrizmilz/quarto-rladies-theme" target="_blank">страница</a></td>
+</tr>
+<tr class="even">
+<td>Meghan Hall</td>
+<td><a href="https://meghan.rbind.io/slides/neair/neair.html#/title-slide" target="_blank">Streamling with R</a></td>
+<td><a href="https://meghan.rbind.io/blog/quarto-slides/" target="_blank">страница</a></td>
+</tr>
+</tbody>
+</table>
+<p>Больше примеров можно найти на странице <a href="https://github.com/mcanouil/awesome-quarto#presentations" target="_blank">Awesome Quarto</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Quarto</category>
+  <category>практическое занятие</category>
+  <guid>https://www.myblogexample.io/posts/day_3/index.html</guid>
+  <pubDate>Fri, 17 Mar 2023 17:00:00 GMT</pubDate>
+  <media:content url="https://www.myblogexample.io/posts/day_3/reveal_js.png" medium="image" type="image/png" height="46" width="144"/>
+</item>
+<item>
+  <title>Основы создания веб-страниц, блогов и интерактивных книг в Quarto</title>
+  <dc:creator>Е.Н. Матеров</dc:creator>
+  <link>https://www.myblogexample.io/posts/day_2/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Создание веб-страниц, отчетов, блогов и интерактивных книг в Quarto. <lord-icon speed="2.0" delay="1000" src="https://cdn.lordicon.com/puvaffet.json" trigger="loop"></lord-icon></p>
+<p>Второй митап построен как практическое занятие. В ходе митапа мы рассмотрим:</p>
+<ol type="1">
+<li>как создавать статьи, блоги и интерактивные книги в Quarto</li>
+<li>адаптацию документов к языковым соответствиям (локализацию документов)</li>
+<li>публикацию документов в сети Интернет</li>
+<li>структуру документов Quarto на основе заготовок</li>
+<li>оформление библиографии</li>
+<li>основы работы с Git при работе с Quarto-документами</li>
+</ol>
+<section id="основные-рабочие-инструменты" class="level2">
+<h2 class="anchored" data-anchor-id="основные-рабочие-инструменты">Основные рабочие инструменты</h2>
+<p>Для полноценной работы будут необходимы следующие установленные инструменты.</p>
+<ul>
+<li><p>IDE <a href="https://posit.co/download/rstudio-desktop/" target="_blank">RStudio Desktop</a> и <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>.</p></li>
+<li><p>Установленный <a href="https://quarto.org/docs/get-started/" target="_blank">Quarto CLI</a> версии &gt;1.2<sup>1</sup>, а также <a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto" target="_blank">quarto-vscode plugin</a>.</p></li>
+<li><p>Зарегистрированная учетная запись на <a href="https://github.com/signup" target="_blank">GitHub</a>.</p></li>
+<li><p>Зарегистрированная учетная запись на <a href="https://app.netlify.com/signup" target="_blank">Netlify</a>.</p></li>
+<li><p>Для клонирования репозитория и работы с Git может понадобиться, например, <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a> или <a href="https://www.gitkraken.com/download" target="_blank">GitKraken</a>.</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Некоторые полезные расширения VS Code
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank">GitLens</a></p></li>
+<li><p><a href="https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager" target="_blank">Project Manager</a></p></li>
+<li><p><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" target="_blank">Code Spell Checker</a></p></li>
+<li><p><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-russian" target="_blank">Russian - Code Spell Checker</a></p></li>
+<li><p><a href="https://marketplace.visualstudio.com/items?itemName=adamvoss.vscode-languagetool" target="_blank">LanguageTool Extension</a></p></li>
+<li><p><a href="https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ru" target="_blank">Языковой пакет для русского языка для VS Code</a></p></li>
+<li><p><a href="https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula" target="_blank">Official Dracula Theme</a></p></li>
+<li><p><a href="https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight" target="_blank">Color Highlight</a></p></li>
+<li><p><a href="https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons" target="_blank">VS Code Great Icons</a></p></li>
+<li><p><a href="https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml" target="_blank">YAML</a></p></li>
+<li><p><a href="https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf" target="_blank">vscode-pdf</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="примеры-документов-и-репозитории" class="level2">
+<h2 class="anchored" data-anchor-id="примеры-документов-и-репозитории">Примеры документов и репозитории</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://quarto-meetup-begin-blog.netlify.app" target="_blank"><img src="https://www.myblogexample.io/posts/day_2/blog_sample.png" class="img-fluid figure-img"></a></p>
+<p></p><figcaption class="figure-caption">Пример блога / <a href="https://github.com/quarto-meetup-begin/materials/blog">ссылка на репозиторий</a> с примером блога</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://quarto-meetup-begin-report.netlify.app" target="_blank"><img src="https://www.myblogexample.io/posts/day_2/report_sample.png" class="img-fluid figure-img"></a></p>
+<p></p><figcaption class="figure-caption">Пример отчета / <a href="https://github.com/quarto-meetup-begin/materials/report">ссылка на репозиторий</a> с примером отчета</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://quarto-meetup-begin-book.netlify.app" target="_blank"><img src="https://www.myblogexample.io/posts/day_2/book_sample.png" class="img-fluid figure-img"></a></p>
+<p></p><figcaption class="figure-caption">Пример интерактивной книги / <a href="https://github.com/quarto-meetup-begin/materials/book">ссылка на репозиторий</a> с примером интерактивной книги</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="локализация-pdf" class="level2">
+<h2 class="anchored" data-anchor-id="локализация-pdf">Локализация PDF</h2>
+<p>На <a href="https://quarto.org/docs/reference/formats/pdf.html" target="_blank">странице документации</a> и <a href="https://quarto.org/docs/output-formats/pdf-basics.html" target="_blank">странице</a> описано множество различных опций для создания Quarto -&gt; PDF документов. Для локализации можно использовать несколько различных возможностей, например следующие.</p>
+<ul>
+<li><p><strong>Способ 1</strong> принадлежит С.В. Бабёнышеву. Локализация основана на существовании <code>*.tex</code>-шаблона и описана в <a href="https://github.com/materov/quarto-rus-latex" target="_blank">GitHib-репозитории</a>.</p></li>
+<li><p><strong>Способ 2</strong> предложил <a href="https://www.hse.ru/staff/agricolamz" target="_blank">Георгий Алексеевич Мороз</a>. Необходимо добавить в YAML-преамбулу:</p></li>
+</ul>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="sc" style="color: #5E5E5E;">---</span></span>
+<span id="cb1-2">title<span class="sc" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"Тестируем кириллицу"</span></span>
+<span id="cb1-3">format<span class="sc" style="color: #5E5E5E;">:</span> </span>
+<span id="cb1-4">    pdf<span class="sc" style="color: #5E5E5E;">:</span></span>
+<span id="cb1-5">      pdf<span class="sc" style="color: #5E5E5E;">-</span>engine<span class="sc" style="color: #5E5E5E;">:</span> xelatex</span>
+<span id="cb1-6">      include<span class="sc" style="color: #5E5E5E;">-</span><span class="cf" style="color: #003B4F;">in</span><span class="sc" style="color: #5E5E5E;">-</span>header<span class="sc" style="color: #5E5E5E;">:</span> </span>
+<span id="cb1-7">          text<span class="sc" style="color: #5E5E5E;">:</span> <span class="er" style="color: #AD0000;">|</span></span>
+<span id="cb1-8">            \usepackage[english,russian]{babel} </span>
+<span id="cb1-9">            \usepackage{fontspec}</span>
+<span id="cb1-10">            \setmainfont{Brill}</span>
+<span id="cb1-11">            <span class="co" style="color: #5E5E5E;"># шрифты можно указать свои</span></span>
+<span id="cb1-12">            \setmonofont{Iosevka}</span>
+<span id="cb1-13">            \addtokomafont{disposition}{\rmfamily}</span>
+<span id="cb1-14">editor<span class="sc" style="color: #5E5E5E;">:</span> visual</span>
+<span id="cb1-15"><span class="sc" style="color: #5E5E5E;">---</span></span>
+<span id="cb1-16"></span>
+<span id="cb1-17">Мой дядя самых честных правил</span></code></pre></div>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Сноски</h2>
+
+<ol>
+<li id="fn1"><p>для работы с некоторыми новыми функциями Quarto можно установить <a href="https://quarto.org/docs/download/prerelease.html" target="_blank">экспериментальную версию</a> Quarto CLI &gt;1.3; в митапе будет использоваться версия 1.3.228, однако это не обязательно.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>Quarto</category>
+  <category>практическое занятие</category>
+  <guid>https://www.myblogexample.io/posts/day_2/index.html</guid>
+  <pubDate>Fri, 10 Mar 2023 17:00:00 GMT</pubDate>
+  <media:content url="https://www.myblogexample.io/posts/day_2/how-to-write-a-report.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Обзор и начало работы с Quarto</title>
+  <dc:creator>Е.Н. Матеров</dc:creator>
+  <link>https://www.myblogexample.io/posts/day_1/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Добро пожаловать! <lord-icon speed="3.0" delay="1000" src="https://cdn.lordicon.com/lupuorrc.json" trigger="loop"></lord-icon></p>
+<p><a href="https://quarto.org/" target="_blank">Quarto</a> – это платформа научных публикаций с открытым исходным кодом, которая изначально поддерживает <a href="https://www.r-project.org/" target="_blank">R</a>, <a href="https://www.python.org/" target="_blank">Python</a>, <a href="https://julialang.org/" target="_blank">Julia</a> и <a href="https://observablehq.com/" target="_blank">Observable JS</a>. Quarto – следующее поколение RMarkdown, которое было ориентировано на пользователей R. С помощью Quarto можно создавать документы, книги, презентации, блоги или другие онлайн-ресурсы, сохранять результат в Word, PDF, ePub, комбинируя текст, элементы кода, рисунки.</p>
+<section id="обзор-quarto-и-начало-работы" class="level2">
+<h2 class="anchored" data-anchor-id="обзор-quarto-и-начало-работы">Обзор Quarto и начало работы</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://quarto-meetup-begin-presentation.netlify.app" data-preview-link="false" style="text-align: center" target="_blank" title="Митап 4 марта 2023 г."><img src="https://www.myblogexample.io/posts/day_1/day_1.png" class="img-fluid figure-img"></a></p>
+<p></p><figcaption class="figure-caption">В презентации будет сделан обзор Quarto, показано, как установить и начать работу с Quarto. Также, будет кратко рассмотрена структура документов Quarto, возможности для интернет-публикации, сделано сравнение с существующими инструментами, даны ссылки на полезные материалы по Quarto.</figcaption><p></p>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Совет
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Для просмотра слайдов в полноэкранном режиме после открытия страницы необходимо нажать <kbd>f</kbd>. Для включения режима указателя нажмите <kbd>q</kbd> во время просмотра слайдов.</p>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>Quarto</category>
+  <category>лекция</category>
+  <guid>https://www.myblogexample.io/posts/day_1/index.html</guid>
+  <pubDate>Fri, 03 Mar 2023 17:00:00 GMT</pubDate>
+  <media:content url="https://www.myblogexample.io/posts/day_1/quarto.jpeg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,97 @@
+---
+title: "Основы создания веб-страниц, блогов и интерактивных книг в Quarto"
+author: "Е.Н. Матеров"
+date: "2023-03-11"
+categories: [Quarto, практическое занятие]
+image: "how-to-write-a-report.jpg"
+draft: false
+---
+
+Создание веб-страниц, отчетов, блогов и интерактивных книг в Quarto. {{< li puvaffet trigger=loop speed=2.0 delay=1000 >}}
+
+Второй митап построен как практическое занятие. В ходе митапа мы рассмотрим:
+
+1.  как создавать статьи, блоги и интерактивные книги в Quarto
+2.  адаптацию документов к языковым соответствиям (локализацию документов)
+3.  публикацию документов в сети Интернет
+4.  структуру документов Quarto на основе заготовок
+5.  оформление библиографии
+6.  основы работы с Git при работе с Quarto-документами
+
+## Основные рабочие инструменты {#основные-рабочие-инструменты}
+
+Для полноценной работы будут необходимы следующие установленные инструменты.
+
+-   IDE [RStudio Desktop](https://posit.co/download/rstudio-desktop/){target="_blank"} и [Visual Studio Code](https://code.visualstudio.com/){target="_blank"}.
+
+-   Установленный [Quarto CLI](https://quarto.org/docs/get-started/){target="_blank"} версии \>1.2[^1], а также [quarto-vscode plugin](https://marketplace.visualstudio.com/items?itemName=quarto.quarto){target="_blank"}.
+
+-   Зарегистрированная учетная запись на [GitHub](https://github.com/signup){target="_blank"}.
+
+-   Зарегистрированная учетная запись на [Netlify](https://app.netlify.com/signup){target="_blank"}.
+
+-   Для клонирования репозитория и работы с Git может понадобиться, например, [GitHub Desktop](https://desktop.github.com/){target="_blank"} или [GitKraken](https://www.gitkraken.com/download){target="_blank"}.
+
+[^1]: для работы с некоторыми новыми функциями Quarto можно установить [экспериментальную версию](https://quarto.org/docs/download/prerelease.html){target="_blank"} Quarto CLI \>1.3; в митапе будет использоваться версия `r system("quarto --version", intern = TRUE)`, однако это не обязательно.
+
+::: {.callout-tip collapse="true"}
+## Некоторые полезные расширения VS Code {#некоторые-полезные-расширения-vs-code}
+
+-   [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens){target="_blank"}
+
+-   [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager){target="_blank"}
+
+-   [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker){target="_blank"}
+
+-   [Russian - Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-russian){target="_blank"}
+
+-   [LanguageTool Extension](https://marketplace.visualstudio.com/items?itemName=adamvoss.vscode-languagetool){target="_blank"}
+
+-   [Языковой пакет для русского языка для VS Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ru){target="_blank"}
+
+-   [Official Dracula Theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula){target="_blank"}
+
+-   [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight){target="_blank"}
+
+-   [VS Code Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons){target="_blank"}
+
+-   [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml){target="_blank"}
+
+-   [vscode-pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf){target="_blank"}
+:::
+
+## Примеры документов и репозитории {#примеры-документов-и-репозитории}
+
+[![Пример блога / <a href="https://github.com/quarto-meetup-begin/materials/blog">ссылка на репозиторий</a> с примером блога](blog_sample.png)](https://quarto-meetup-begin-blog.netlify.app){target="_blank"}
+
+[![Пример отчета / <a href="https://github.com/quarto-meetup-begin/materials/report">ссылка на репозиторий</a> с примером отчета](report_sample.png)](https://quarto-meetup-begin-report.netlify.app){target="_blank"}
+
+[![Пример интерактивной книги / <a href="https://github.com/quarto-meetup-begin/materials/book">ссылка на репозиторий</a> с примером интерактивной книги](book_sample.png)](https://quarto-meetup-begin-book.netlify.app){target="_blank"}
+
+## Локализация PDF
+
+На [странице документации](https://quarto.org/docs/reference/formats/pdf.html){target="_blank"} и [странице](https://quarto.org/docs/output-formats/pdf-basics.html){target="_blank"} описано множество различных опций для создания Quarto -> PDF документов. Для локализации можно использовать несколько различных возможностей, например следующие.
+
+- **Способ 1** принадлежит С.В. Бабёнышеву. Локализация основана на существовании `*.tex`-шаблона и описана в [GitHib-репозитории](https://github.com/materov/quarto-rus-latex){target="_blank"}.
+
+- **Способ 2** предложил [Георгий Алексеевич Мороз](https://www.hse.ru/staff/agricolamz){target="_blank"}. Необходимо добавить в YAML-преамбулу:
+
+```r
+---
+title: "Тестируем кириллицу"
+format: 
+    pdf:
+      pdf-engine: xelatex
+      include-in-header: 
+          text: |
+            \usepackage[english,russian]{babel} 
+            \usepackage{fontspec}
+            \setmainfont{Brill}
+            # шрифты можно указать свои
+            \setmonofont{Iosevka}
+            \addtokomafont{disposition}{\rmfamily}
+editor: visual
+---
+
+Мой дядя самых честных правил
+```

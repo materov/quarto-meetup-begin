@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Введение в Quarto",
+    "section": "",
+    "text": "reveal.js презентации в Quarto\n\n\n\n\n\n\n\nQuarto\n\n\nпрактическое занятие\n\n\n\n\n\n\n\n\n\n\n\nсуббота, 18 марта 2023 г.\n\n\nЕ.Н. Матеров\n\n\n\n\n\n\n  \n\n\n\n\nОсновы создания веб-страниц, блогов и интерактивных книг в Quarto\n\n\n\n\n\n\n\nQuarto\n\n\nпрактическое занятие\n\n\n\n\n\n\n\n\n\n\n\nсуббота, 11 марта 2023 г.\n\n\nЕ.Н. Матеров\n\n\n\n\n\n\n  \n\n\n\n\nОбзор и начало работы с Quarto\n\n\n\n\n\n\n\nQuarto\n\n\nлекция\n\n\n\n\n\n\n\n\n\n\n\nсуббота, 4 марта 2023 г.\n\n\nЕ.Н. Матеров\n\n\n\n\n\n\nНет подходящих элементов"
+  },
+  {
+    "objectID": "posts/day_3/index.html",
+    "href": "posts/day_3/index.html",
+    "title": "reveal.js презентации в Quarto",
+    "section": "",
+    "text": "Третий митап посвящен созданию презентаций в Quarto на основе Revealjs."
+  },
+  {
+    "objectID": "posts/day_3/index.html#примеры-шаблонов-презентаций",
+    "href": "posts/day_3/index.html#примеры-шаблонов-презентаций",
+    "title": "reveal.js презентации в Quarto",
+    "section": "Примеры шаблонов презентаций",
+    "text": "Примеры шаблонов презентаций\n\n\n\nАвтор\nПример\nКод\n\n\n\n\nQuarto\nQuarto Presentations\nстраница\n\n\nEmil Hvitfeldt\niFrames\nстраница\n\n\nEmil Hvitfeldt\nleterbox\nстраница\n\n\nEmil Hvitfeldt\nRoughNotation\nстраница\n\n\nEmil Hvitfeldt\nSeasons\nстраница\n\n\nEmil Hvitfeldt\ninverse\nстраница\n\n\nEmil Hvitfeldt\nSnow\nстраница\n\n\nEmil Hvitfeldt\nBlackboard\n\n\n\nBob Rudis\nOrganization Boilerplate Template\nстраница\n\n\nMickaël Canouil\nCoeos\nстраница\n\n\nBeatriz Milz\nQuarto R-Ladies Theme\nстраница\n\n\nMeghan Hall\nStreamling with R\nстраница\n\n\n\nБольше примеров можно найти на странице Awesome Quarto."
+  },
+  {
+    "objectID": "posts/day_2/index.html",
+    "href": "posts/day_2/index.html",
+    "title": "Основы создания веб-страниц, блогов и интерактивных книг в Quarto",
+    "section": "",
+    "text": "Создание веб-страниц, отчетов, блогов и интерактивных книг в Quarto.\nВторой митап построен как практическое занятие. В ходе митапа мы рассмотрим:"
+  },
+  {
+    "objectID": "posts/day_2/index.html#основные-рабочие-инструменты",
+    "href": "posts/day_2/index.html#основные-рабочие-инструменты",
+    "title": "Основы создания веб-страниц, блогов и интерактивных книг в Quarto",
+    "section": "Основные рабочие инструменты",
+    "text": "Основные рабочие инструменты\nДля полноценной работы будут необходимы следующие установленные инструменты.\n\nIDE RStudio Desktop и Visual Studio Code.\nУстановленный Quarto CLI версии &gt;1.21, а также quarto-vscode plugin.\nЗарегистрированная учетная запись на GitHub.\nЗарегистрированная учетная запись на Netlify.\nДля клонирования репозитория и работы с Git может понадобиться, например, GitHub Desktop или GitKraken.\n\n\n\n\n\n\n\nНекоторые полезные расширения VS Code\n\n\n\n\n\n\nGitLens\nProject Manager\nCode Spell Checker\nRussian - Code Spell Checker\nLanguageTool Extension\nЯзыковой пакет для русского языка для VS Code\nOfficial Dracula Theme\nColor Highlight\nVS Code Great Icons\nYAML\nvscode-pdf"
+  },
+  {
+    "objectID": "posts/day_2/index.html#примеры-документов-и-репозитории",
+    "href": "posts/day_2/index.html#примеры-документов-и-репозитории",
+    "title": "Основы создания веб-страниц, блогов и интерактивных книг в Quarto",
+    "section": "Примеры документов и репозитории",
+    "text": "Примеры документов и репозитории\n\n\n\nПример блога / ссылка на репозиторий с примером блога\n\n\n\n\n\nПример отчета / ссылка на репозиторий с примером отчета\n\n\n\n\n\nПример интерактивной книги / ссылка на репозиторий с примером интерактивной книги"
+  },
+  {
+    "objectID": "posts/day_1/index.html",
+    "href": "posts/day_1/index.html",
+    "title": "Обзор и начало работы с Quarto",
+    "section": "",
+    "text": "Добро пожаловать!\nQuarto – это платформа научных публикаций с открытым исходным кодом, которая изначально поддерживает R, Python, Julia и Observable JS. Quarto – следующее поколение RMarkdown, которое было ориентировано на пользователей R. С помощью Quarto можно создавать документы, книги, презентации, блоги или другие онлайн-ресурсы, сохранять результат в Word, PDF, ePub, комбинируя текст, элементы кода, рисунки."
+  },
+  {
+    "objectID": "posts/day_1/index.html#обзор-quarto-и-начало-работы",
+    "href": "posts/day_1/index.html#обзор-quarto-и-начало-работы",
+    "title": "Обзор и начало работы с Quarto",
+    "section": "Обзор Quarto и начало работы",
+    "text": "Обзор Quarto и начало работы\n\n\n\nВ презентации будет сделан обзор Quarto, показано, как установить и начать работу с Quarto. Также, будет кратко рассмотрена структура документов Quarto, возможности для интернет-публикации, сделано сравнение с существующими инструментами, даны ссылки на полезные материалы по Quarto.\n\n\n\n\n\n\n\n\nСовет\n\n\n\nДля просмотра слайдов в полноэкранном режиме после открытия страницы необходимо нажать f. Для включения режима указателя нажмите q во время просмотра слайдов."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "О митапах",
+    "section": "",
+    "text": "Данный сайт соответствует серии митапов, проводимых 4, 11 и 18 марта 2023 года.\nЦель митапов – научиться основным навыкам работы в Quarto. Во время практических занятий будет сделан обзор некоторых приемов работы в Quarto, таких как локализация документов, установка расширений, показано, как может быть организована работа с различными форматами и построен рабочий процесс на основе Git.\n\n\n\n\n\n\n \n\n\nМитапы проводит Евгений Матеров, заведующий кафедрой физики, математики и информационных технологий ФГБОУ ВО Сибирская пожарно-спасательная академия ГПС МЧС России, автор таких проектов как Rесурсы и Графики на досуге, оформленных в Quarto."
+  },
+  {
+    "objectID": "posts/day_2/index.html#локализация-pdf",
+    "href": "posts/day_2/index.html#локализация-pdf",
+    "title": "Основы создания веб-страниц, блогов и интерактивных книг в Quarto",
+    "section": "Локализация PDF",
+    "text": "Локализация PDF\nНа странице документации и странице описано множество различных опций для создания Quarto -&gt; PDF документов. Для локализации можно использовать несколько различных возможностей, например следующие.\n\nСпособ 1 принадлежит С.В. Бабёнышеву. Локализация основана на существовании *.tex-шаблона и описана в GitHib-репозитории.\nСпособ 2 предложил Георгий Алексеевич Мороз. Необходимо добавить в YAML-преамбулу:\n\n---\ntitle: \"Тестируем кириллицу\"\nformat: \n    pdf:\n      pdf-engine: xelatex\n      include-in-header: \n          text: |\n            \\usepackage[english,russian]{babel} \n            \\usepackage{fontspec}\n            \\setmainfont{Brill}\n            # шрифты можно указать свои\n            \\setmonofont{Iosevka}\n            \\addtokomafont{disposition}{\\rmfamily}\neditor: visual\n---\n\nМой дядя самых честных правил"
+  }
+]
