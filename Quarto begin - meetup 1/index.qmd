@@ -1,0 +1,931 @@
+---
+format: 
+  revealjs:
+    theme: ["theme/q-theme.scss"]
+    slide-number: c/t
+    logo: "images/quarto.png"
+    code-copy: true
+    center-title-slide: false
+    chalkboard: true
+    highlight-style: github
+    code-line-numbers: false
+  html:
+    mermaid:
+      theme: forest
+revealjs-plugins:
+  - pointer
+code-link: true
+lang: ru
+height: 1080
+width: 1600
+execute: 
+  eval: true
+  echo: true
+---
+
+<h1>Научно-издательская <br>система Quarto</h1>
+
+<h2>обзор и начало работы</h2>
+
+<hr>
+
+<h3>Е.Н. Матеров <br><br></h3>
+
+<h3>4 марта 2023 г.</h3>
+
+<br>
+
+<h3>
+
+`r fontawesome::fa("link", "black")`   [quarto-meetup-begin.netlify.app](https://quarto-meetup-begin.netlify.app){target="_blank"}
+
+<h3>
+
+`r fontawesome::fa("github", "black")`   [github.com/materov/quarto-meetup-begin](https://github.com/materov/quarto-meetup-begin){target="_blank"}
+
+![](images/15_ak_web.svg){.absolute top="425" left="1100" width="530"}
+
+## Название "Quarto" {#название-quarto}
+
+::: columns
+::: {.column width="40%"}
+![](images/MND_title_page.jpg){alt-text="Пример Кварто. Сон в летнюю ночь У. Шекспира." width="500px"}
+:::
+
+::: {.column width="60%"}
+::: {.callout-note appearance="simple" icon="false"}
+Quarto (от латинского quārtō)[^1] --- это книга или брошюра, изготовленная из полных листов, напечатанных с восемью страницами текста, по четыре на одну сторону, а затем сложенных дважды, чтобы получить четыре листа.
+:::
+
+::: {.callout-note appearance="simple" icon="false"}
+Слева показан пример кварто-книги.
+:::
+:::
+:::
+
+[^1]: Самой ранней известной европейской печатной книгой является кварто [Sibyllenbuch](https://en.wikipedia.org/wiki/Sibyllenbuch_fragment){target="_blank"}, которая, как полагают, была напечатана [Иоганном Гутенбергом](https://en.wikipedia.org/wiki/Johannes_Gutenberg){target="_blank"} <br>в 1452-53 годах.
+
+## Содержание {#содержание data-menu-title="1. Обзор Quarto и примеры"}
+
+::: {style="font-size: 1.1em"}
+<br>
+
+[**1. Обзор Quarto и примеры**]{style="color: midnightblue;"}
+
+<br>
+
+[2. Как начать работу в Quarto?]{style="color: grey;"}
+
+<br>
+
+[3. Структура документов в Quarto]{style="color: grey;"}
+
+<br>
+
+[4. Возможности для интернет-публикации]{style="color: grey;"}
+
+<br>
+
+[5. Дополнительные материалы по Quarto]{style="color: grey;"}
+
+<br>
+
+[6. Выводы]{style="color: grey;"}
+:::
+
+## Quarto {#quarto}
+
+> [Quarto](https://quarto.org/)® --- это научно-техническая издательская система с открытым исходным кодом, построенная на основе [Pandoc](https://pandoc.org/) и использующая [Markdown](https://www.markdownguide.org/) для разметки.
+
+::: incremental
+-   [Pandoc](https://pandoc.org/) --- универсальный конвертер для работы с текстовыми документами для форматирования научных и технических текстов, поддерживающий более 40 различных форматов.
+:::
+
+::: incremental
+-   [Quarto **CLI**](https://github.com/quarto-dev/quarto-cli) --- это интерфейс командной строки, который преобразует обычные различные форматы (`.md`, `.rmd`, `.qmd` или `.ipynb` / Jupyter notebook) в статические отчеты PDF / Word / HTML, интерактивные книги, веб-сайты, блоги, презентации и многое другое.
+:::
+
+::: incremental
+-   [Quarto](https://quarto.org/) позволяет создавать динамический контент с помощью [Python](https://quarto.org/docs/computations/python.html), [R](https://quarto.org/docs/computations/r.html), [Julia](https://quarto.org/docs/computations/julia.html) и [Observable JavaScript](https://quarto.org/docs/computations/ojs.html).
+:::
+
+::: incremental
+-   Авторы: Carlos Scheidegger ([\@cscheid](https://github.com/cscheid)), Charles Teague ([\@dragonstyle](https://github.com/dragonstyle)), Christophe Dervieux ([\@cderv](https://github.com/cderv)), **J.J. Allaire** ([\@jjallaire](https://github.com/jjallaire/)), Yihui Xie ([\@yihui](https://github.com/yihui)).
+:::
+
+## Введение в Quarto {#введение-в-quarto data-menu-title="Обзор Quarto"}
+
+![](images/my_Quarto.png)
+
+::: {style="text-align: center; margin-top: 1em"}
+[обзор научно-издательской системы Quarto](https://data-visualization-blog.netlify.app/posts/quarto/){preview-link="true" style="text-align: center"}
+:::
+
+## Статьи {#статьи}
+
+::: {layout-ncol="2"}
+![](images/gallery-doc-html.png)
+
+![](images/gallery-doc-pdf.png)
+:::
+
+## Веб-страницы {#веб-страницы}
+
+::: {layout-ncol="2"}
+![](images/gallery-web-nasa.png)
+
+![](images/gallery-web-quarto.png)
+:::
+
+## Книги {#книги}
+
+::: {layout-ncol="2"}
+![](images/gallery-books-r4ds.png)
+
+![](images/gallery-books-viz.png)
+:::
+
+## Презентации {#презентации}
+
+::: {layout-ncol="2"}
+![](images/gallery-pres-3.png)
+
+![](images/gallery-pres-4.png)
+:::
+
+## Больше примеров разработок в Quarto {#больше-примеров-разработок-в-quarto}
+
+![](images/Quarto%20start.png)
+
+::: {style="text-align: center; margin-top: 1em"}
+[https://quarto.org/docs/gallery/](https://quarto.org/docs/gallery/){preview-link="true" style="text-align: center"}
+:::
+
+## Пример страницы в Quarto {#пример-страницы-в-quarto}
+
+![](images/R%D0%B5%D1%81%D1%83%D1%80%D1%81%D1%8B.png)
+
+::: {style="text-align: center; margin-top: 1em"}
+[https://materov.github.io/R-sources/](https://materov.github.io/R-sources/){preview-link="true" style="text-align: center"}
+:::
+
+## Пример блога в Quarto {#пример-блога-в-quarto}
+
+![](images/Dosug.png)
+
+::: {style="text-align: center; margin-top: 1em"}
+[https://data-visualization-blog.netlify.app/](https://data-visualization-blog.netlify.app/){preview-link="true" style="text-align: center"}
+:::
+
+## Содержание {#содержание-1 data-menu-title="2. Как начать работу Quarto?"}
+
+::: {style="font-size: 1.1em"}
+<br>
+
+[1. Обзор Quarto и примеры]{style="color: grey;"}
+
+<br>
+
+[**2. Как начать работу в Quarto?**]{style="color: midnightblue;"}
+
+<br>
+
+[3. Структура документов в Quarto]{style="color: grey;"}
+
+<br>
+
+[4. Возможности для интернет-публикации]{style="color: grey;"}
+
+<br>
+
+[5. Дополнительные материалы по Quarto]{style="color: grey;"}
+
+<br>
+
+[6. Выводы]{style="color: grey;"}
+:::
+
+## Начало работы с Quarto {#начало-работы-с-quarto}
+
+![](images/Quarto%20begin.png)
+
+::: {style="text-align: center; margin-top: 1em"}
+[https://quarto.org/](https://quarto.org/){preview-link="true" style="text-align: center"}
+:::
+
+## Quarto в RStudio {#quarto-в-rstudio}
+
+![](images/pinguiny.png)
+
+## Quarto в Visual Studio Code {#quarto-в-visual-studio-code}
+
+![](images/VS%20Code.png)
+
+## Quarto в Jupyter {#quarto-в-jupyter}
+
+::: {layout="[[60, 50]]"}
+![](images/Python-notebook.png)
+
+![](images/Python-notebook-result.png)
+:::
+
+## Создание документов в Rstudio {#создание-документов-в-rstudio}
+
+::: {layout="[[0.7, 0.3]]"}
+![](images/making%20RStudio.png)
+:::
+
+## Создание документов в Visual Studio Code {#создание-документов-в-visual-studio-code}
+
+::: {layout="[[1, 0.1]]"}
+![](images/making%20VS%20Code.png)
+:::
+
+## Возможности для рендеринга {#возможности-для-рендеринга}
+
+1.  Используйте кнопку **Render** в RStudio IDE для рендеринга файла и предварительного просмотра выходных данных. ![](images/rstudio-render.png)
+
+::: incremental
+2.  Также, можно использовать **Render** в Visual Studio Code. ![](images/VS_Code-render.png)
+:::
+
+::: incremental
+3.  Quarto как R-библиотека:
+
+    ``` r
+    quarto::quarto_render(input = ___, output_format = ___)
+    ```
+:::
+
+::: incremental
+4.  Quarto в командной строке:
+
+    ``` bash
+    quarto render <input> --to <format>
+    ```
+:::
+
+## Единый источник документа {#единый-источник-документа}
+
+Документ может быть преобразован в различные выходные форматы через Pandoc:
+
+``` {.bash style="font-size: 1.3em"}
+$ quarto render hello.qmd --to html
+$ quarto render hello.qmd --to pdf
+$ quarto render hello.qmd --to docx
+$ quarto render hello.qmd --to epub
+$ quarto render hello.qmd --to pptx
+$ quarto render hello.qmd --to revealjs
+```
+
+![](images/working-diagram.png)
+
+## Возможность вывода в нескольких форматах одновременно
+
+![](images/other_formats.png)
+
+## Содержание {#содержание-2 data-menu-title="3. Структура документов в Quarto"}
+
+::: {style="font-size: 1.1em"}
+<br>
+
+[1. Обзор Quarto и примеры]{style="color: grey;"}
+
+<br>
+
+[2. Как начать работу в Quarto?]{style="color: grey;"}
+
+<br>
+
+[**3. Структура документов в Quarto**]{style="color: midnightblue;"}
+
+<br>
+
+[4. Возможности для интернет-публикации]{style="color: grey;"}
+
+<br>
+
+[5. Дополнительные материалы по Quarto]{style="color: grey;"}
+
+<br>
+
+[6. Выводы]{style="color: grey;"}
+:::
+
+## Составляющие `.qmd`-документа {#составляющие-.qmd-документа}
+
+::: {.columns layout="[[0.9, -0.1, 0.65]]"}
+::: {.column width="50%"}
+``` markdown
+---
+title: "Заголовок документа"
+format:
+  html:
+    code-fold: true
+---
+Текст: пример рисунка, см. @fig-ggplot.
+```
+
+```` markdown
+```{{r}}
+#| label: fig-ggplot
+#| fig-cap: "Демонстрация `ggplot`"
+library(hrbrthemes)
+library(tidyverse)
+
+ggplot(mtcars, aes(mpg, wt)) +
+  geom_point(color = ft_cols$yellow) +
+  geom_smooth() +
+  labs(x = "Экономия топлива (mpg)", 
+       y = "Вес (т)",
+       title = "Пример диаграммы рассеяния",
+       caption = "Источник: hrbrthemes") + 
+  theme_ft_rc()
+```
+````
+:::
+
+1.  Метаданные (YAML).
+
+2.  Текст документа.
+
+3.  Ячейки с исполняемым кодом.
+:::
+
+. . .
+
+::: {style="position: absolute; top: 97px; left: 10px; width: 830px; height: 190px; background-color: #44709950; z-index: -1; border-radius: 5px;"}
+:::
+
+. . .
+
+::: {style="position: absolute; top: 292px; left: 10px; width: 830px; height: 56px; background-color: #72994E50; z-index: -1; border-radius: 5px;"}
+:::
+
+. . .
+
+::: {style="position: absolute; top: 350px; left: 10px; width: 830px; height: 510px; background-color: #ffd60a50; z-index: -1; border-radius: 5px;"}
+:::
+
+##  {#section style="font-size: 1em"}
+
+Текст: пример рисунка, см. @fig-ggplot.
+
+```{r}
+#| echo: false
+#| label: fig-ggplot
+#| fig-cap: "Демонстрация `ggplot`"
+#| fig-width: 6
+#| fig-height: 4
+
+library(hrbrthemes)
+library(tidyverse)
+
+ggplot(mtcars, aes(mpg, wt)) +
+  geom_point(color = ft_cols$yellow) +
+  geom_smooth() +
+  labs(x = "Экономия топлива (mpg)", 
+       y = "Вес (т)",
+       title = "Пример диаграммы рассеяния",
+       caption = "Источник: hrbrthemes") + 
+  theme_ft_rc() +
+  theme(plot.margin = margin(0.5, 0.5, 0.5, 0.5, "cm"),
+        legend.title = element_text(size = rel(1.1)),
+        legend.text = element_text(size = rel(1.1)))
+```
+
+## Метаданные (YAML-часть документа) {#метаданные-yaml-часть-документа}
+
+Метаданные могут быть включены в **Quarto**-документ с помощью [YAML](https://ru.wikipedia.org/wiki/YAML) либо в преамбуле в начале файла, либо отдельным `_quarto.yml`-файлом.
+
+С помощью [YAML](https://ru.wikipedia.org/wiki/YAML) мы задаем, например, название документу, дату, автора, устанавливаем те параметры, которые необходимы при рендеринге документа, чтобы не писать их в командной строке и т.д.
+
+![](images/YAML.png)
+
+## Markdown {{< fa brands markdown >}} (форматирование текста) {#markdown-fa-brands-markdown-форматирование-текста style="font-size: 50px;"}
+
+<br>
+
++------------------------------------+---------------------------------+
+| Markdown                           | Вывод                           |
++====================================+=================================+
+| ```                                | *курсив* и **полужирный**       |
+| *курсив* и **полужирный**          |                                 |
+| ```                                |                                 |
++------------------------------------+---------------------------------+
+| ```                                | надстрочный^2^ / подстрочный~2~ |
+| надстрочный^2^ / подстрочный~2~    |                                 |
+| ```                                |                                 |
++------------------------------------+---------------------------------+
+| ```                                | ~~зачеркнутый~~                 |
+| ~~зачеркнутый~~                    |                                 |
+| ```                                |                                 |
++------------------------------------+---------------------------------+
+| ```                                | `verbatim code`                 |
+| `verbatim code`                    |                                 |
+| ```                                |                                 |
++------------------------------------+---------------------------------+
+
+## Markdown {{< fa brands markdown >}} (заголовки) {#markdown-fa-brands-markdown-заголовки style="font-size: 50px;"}
+
+<br>
+
++---------------------+-------------------------------------------------+
+| Markdown            | Вывод                                           |
++=====================+=================================================+
+| ```                 | # Заголовок 1 {#заголовок-1 .heading-output}    |
+| # Заголовок 1       |                                                 |
+| ```                 |                                                 |
++---------------------+-------------------------------------------------+
+| ```                 | ## Заголовок 2 {#заголовок-2 .heading-output}   |
+| ## Заголовок 2      |                                                 |
+| ```                 |                                                 |
++---------------------+-------------------------------------------------+
+| ```                 | ### Заголовок 3 {#заголовок-3 .heading-output}  |
+| ### Заголовок 3     |                                                 |
+| ```                 |                                                 |
++---------------------+-------------------------------------------------+
+| ```                 | #### Заголовок 4 {#заголовок-4 .heading-output} |
+| #### Заголовок 4    |                                                 |
+| ```                 |                                                 |
++---------------------+-------------------------------------------------+
+
+## Markdown {{< fa brands markdown >}} (ссылки и рисунки) {#markdown-fa-brands-markdown-ссылки-и-рисунки style="font-size: 50px;"}
+
++------------------------------------------------------+-------------------------------------------------------------------+
+| Markdown                                             | Вывод                                                             |
++======================================================+===================================================================+
+| ```                                                  | <http://sibpsa.ru/>                                               |
+| <https://http://sibpsa.ru/>                          |                                                                   |
+| ```                                                  |                                                                   |
++------------------------------------------------------+-------------------------------------------------------------------+
+| ```                                                  | [СПСА](http://sibpsa.ru/)                                         |
+| [СПСА](http://sibpsa.ru/)                            |                                                                   |
+| ```                                                  |                                                                   |
++------------------------------------------------------+-------------------------------------------------------------------+
+| ```                                                  | ![Caption](logo.png){fig-alt="A line drawing of an elephant."}    |
+| ![Caption](logo.png)                                 |                                                                   |
+| ```                                                  |                                                                   |
++------------------------------------------------------+-------------------------------------------------------------------+
+| ```                                                  | [![Caption](logo.png)](https://quarto.org)                        |
+| [![Caption](logo.png)](http://sibpsa.ru/)            |                                                                   |
+| ```                                                  |                                                                   |
++------------------------------------------------------+-------------------------------------------------------------------+
+| ```                                                  | [![Caption](logo.png "СПСА"){fig-alt="СПСА."}](http://sibpsa.ru/) |
+| [![Caption](logo.png)](http://sibpsa.ru/ "СПСА")     |                                                                   |
+| ```                                                  |                                                                   |
++------------------------------------------------------+-------------------------------------------------------------------+
+| ```                                                  | [![](logo.png){fig-alt="Текст."}](https://sibpsa.ru)              |
+| [![](logo.png){fig-alt="Текст"}](https://quarto.org) |                                                                   |
+| ```                                                  |                                                                   |
++------------------------------------------------------+-------------------------------------------------------------------+
+
+## Markdown {{< fa brands markdown >}} (списки) {#markdown-fa-brands-markdown-списки style="font-size: 40px;"}
+
+![](images/lists_short.png)
+
+## Markdown {{< fa brands markdown >}} (таблицы) {#markdown-fa-brands-markdown-таблицы}
+
+<br>
+
+#### Markdown {#markdown}
+
+``` {style="font-size: 40px;"}
+| Справа | Слева | По умолчанию | По центру |
+|-------:|:------|--------------|:---------:|
+|     12 | 12    | 12           |    12     |
+|    123 | 123   | 123          |    123    |
+|      1 | 1     | 1            |     1     |
+```
+
+<br>
+
+#### Вывод {#вывод}
+
+| Справа | Слева | По умолчанию | По центру |
+|-------:|:------|--------------|:---------:|
+|     12 | 12    | 12           |    12     |
+|    123 | 123   | 123          |    123    |
+|      1 | 1     | 1            |     1     |
+
+## Формулы в Quarto {#формулы-в-quarto}
+
+[Математические формулы](https://quarto.org/docs/authoring/markdown-basics.html#equations) в Quarto используют разделители `$` для встроенных математических элементов текста и разделители `$$` для выносной математики на основе [LaTeX](https://www.latex-project.org/)-синтаксиса.
+
+![](images/LaTeX.png){fig-align="center"}
+
+## Выносные блоки {#выносные-блоки style="font-size: 34px;"}
+
+::: callout-note
+### Заметка {#заметка}
+
+Этот элемент будет использоваться для заметок.
+:::
+
+::: callout-important
+### Замечание {#замечание}
+
+Этот элемент будет использоваться для важных замечаний.
+:::
+
+::: {.callout-caution appearance="simple"}
+### Важно {#важно}
+
+Этот элемент будет использоваться для предупреждений.
+:::
+
+::: {.callout-warning icon="false"}
+### Предостережение {#предостережение}
+
+Этот элемент будет использоваться для предостережений.
+:::
+
+::: callout-tip
+### Совет {#совет}
+
+Этот элемент будет использоваться для рекомендаций и советов.
+:::
+
+## Выносные блоки {#выносные-блоки-1 style="font-size: 45px;"}
+
+``` markdown
+:::{.callout-note}
+## Заметка 
+
+Этот элемент будет использоваться для заметок.
+:::
+```
+
+<br>
+
+``` markdown
+:::{.callout-caution appearance="simple"}
+## Важно
+
+Этот элемент будет использоваться для предупреждений.
+:::
+```
+
+<br>
+
+``` markdown
+:::{.callout-warning icon=false}
+## Предостережение
+
+Этот элемент будет использоваться для предостережений.
+:::
+```
+
+## Расширенные макеты {#расширенные-макеты style="font-size: 43px;"}
+
+В случае, если содержимое выходит за пределы области основного текста, его [можно продолжить](https://quarto.org/docs/authoring/article-layout.html#overflowing-content), используя правую и левую версии столбцов основного текста, страницы и экрана для компоновки содержимого. Например, как ниже:
+
+![](images/overflow.png)
+
+Примеры параметров для определения содержимого, выходящего за фиксированную ширину справа:
+
+![](images/extend_content.png)
+
+## Диаграммы {#диаграммы}
+
+Вставка диаграмм -- еще одно ноу-хау в Quarto, имеющее встроенную поддержку [Mermaid](https://mermaid.js.org/) и [Graphviz](https://graphviz.org/) диаграмм. Это позволяет создавать блок-схемы, диаграммы последовательностей, диаграммы состояний, диаграммы Ганта и многое другое, используя синтаксис обычного текста, вдохновленный markdown.
+
+![](images/mermaid.png)
+
+## Ячейки с исполняемым кодом {#ячейки-с-исполняемым-кодом}
+
+Исполняемый код записывается в специальные блоки (ячейки), в начале которых указывается язык программирования для выделения.
+
+![](images/python.png)
+
+Если мы хотим сделать код неисполняемым -- нужно поставить точку перед указанием языка программирования.
+
+![](images/julia.png)
+
+## Подсветка кода {#подсветка-кода style="font-size: 50px;"}
+
+<br>
+
+``` {.python code-line-numbers="|6|9"}
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(subplot_kw={'projection': 'polar'}) 
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+## Параметры ячейки {#параметры-ячейки}
+
+Внутри ячейки в комментариях в верхней части блока можно указывать параметры. [Параметры ячейки](https://quarto.org/docs/reference/cells/cells-knitr.html) влияют на выполнение и вывод блоков исполняемого кода.
+
+Например:
+
+![](images/params.png)
+
+## Структура проекта блога {#структура-проекта-блога}
+
+Это стандартное содержание проекта-блога в Quarto.
+
+::: {style="font-family: monospace;"}
+myblog/\
+├── `index.qmd` [(основной файл, рендерится)]{style="color: grey;"}\
+├── `_quarto.yml` [(содержит глобальные метаданные)]{style="color: grey;"}\
+├── `about.qmd`\
+├── `style.scss` [(стили, влияет только на index.qmd)]{style="color: grey;"}\
+├── [\_site]{style="color: red;"} [(создаваемая папка, публикуется)]{style="color: grey;"}\
+└── posts/ [(посты)]{style="color: grey;"}\
+    └── `metadata.yml`\
+    └── welcome/\
+        └── `index.qmd`\
+    └── post-with-code\
+        └── `index.qmd`\
+:::
+
+## Структура проекта книги {#структура-проекта-книги}
+
+Это стандартное содержание проекта-книги в Quarto.
+
+::: {style="font-family: monospace;"}
+mybook/\
+├── `index.qmd` [(основной файл, рендерится)]{style="color: grey;"}\
+├── `_quarto.yml` [(содержит глобальные метаданные)]{style="color: grey;"}\
+├── `style.scss` [(стили, влияет только на index.qmd)]{style="color: grey;"}\
+├── `favicon.png` [(фавикон)]{style="color: grey;"}\
+├── `title.png` [(титульная страница)]{style="color: grey;"}\
+├── `sidebar logo.png` [(логотип сайдбара)]{style="color: grey;"}\
+├── `reference.bib` [(метаданные BibTeX со ссылками)]{style="color: grey;"}\
+├── `reference.qmd` [(Глава для ссылок)]{style="color: grey;"}\
+├── `404.qmd` [(Страница не найдена)]{style="color: grey;"}\
+├── [\_book]{style="color: red;"} [(создаваемая папка, публикуется)]{style="color: grey;"}\
+└── Chapter 1/ [(Глава 1)]{style="color: grey;"}\
+    └── `file 1.qmd`\
+├── Chapter 2/ [(Глава 2)]{style="color: grey;"}\
+├── ...\
+├── Chapter n/ [(Глава n)]{style="color: grey;"}\
+└── Appendicies/ [(Приложения)]{style="color: grey;"}\
+:::
+
+## Расширения Quarto {#расширения-quarto}
+
+[Расширения](https://quarto.org/docs/extensions/) -- это мощный способ изменять и расширять поведение Quarto.
+
+![](images/extensions.png)
+
+С помощью расширений можно создавать шаблоны для публикаций, темы презентаций, вставлять видео, твиты, значки и т.д. {{< fa fire title="Fire!" >}}
+
+Также, актуальные расширения можно посмотреть на [странице Awesome Quarto](https://github.com/mcanouil/awesome-quarto#extensions).
+
+## Содержание {#содержание-3 data-menu-title="4. Возможности для интернет-публикации"}
+
+::: {style="font-size: 1.1em"}
+<br>
+
+[1. Обзор Quarto и примеры]{style="color: grey;"}
+
+<br>
+
+[2. Как начать работу в Quarto?]{style="color: grey;"}
+
+<br>
+
+[3. Структура документов в Quarto]{style="color: grey;"}
+
+<br>
+
+[**4. Возможности для интернет-публикации**]{style="color: midnightblue;"}
+
+<br>
+
+[5. Дополнительные материалы по Quarto]{style="color: grey;"}
+
+<br>
+
+[6. Выводы]{style="color: grey;"}
+:::
+
+## Основные сервисы для веб-публикации {#основные-сервисы-для-веб-публикации}
+
+<br>
+
+Вы можете опубликовать Quarto документы в самых различных местах, включая популярные издательские сервисы:
+
+::: {style="font-size: 0.85em"}
++-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Сервис**                                                      | **Описание**                                                                                                                                                                                                                             |
++-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [Netlify](https://netlify.app/)                                 | Используйте Netlify, если вам нужна поддержка пользовательских доменов, аутентификации, предварительного просмотра ветвей и других более продвинутых возможностей.                                                                       |
++-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [GitHub Pages](https://pages.github.com/)                       | Публикуйте контент на основе исходного кода, управляемого в репозитории GitHub. Используйте страницы GitHub, когда исходный код вашего документа или сайта размещен на GitHub.                                                           |
++-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [Quarto Pub](https://quartopub.com/)                            | Служба публикации документов, веб-сайтов и книг Quarto. Используйте Quarto Pub, если вам нужен бесплатный, простой в использовании сервис для общедоступного контента.                                                                   |
++-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [другие сервисы](https://quarto.org/docs/publishing/other.html) | Контент, отображаемый с помощью Quarto, использует стандартные форматы (HTML, Pdf, MS Word и т.д.), которые могут быть опубликованы где угодно. Используйте это, если один из описанных выше методов не соответствует вашим требованиям. |
++-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+: {tbl-colwidths="\[25,75\]"}
+:::
+
+## Пример: публикация в QuartoPub {#пример-публикация-в-quartopub}
+
+![](images/quarto_terminal.png)
+
+## Страница, опубликованная в QuartoPub {#страница-опубликованная-в-quartopub}
+
+![](images/quarto_pub.png)
+
+## Рабочий процесс с Git {#рабочий-процесс-с-git}
+
+<div>
+
+![](images/git_workflow.png){fig-align="center" width="3343"}
+
+</div>
+
+## Содержание {#содержание-4 data-menu-title="5. Дополнительные материалы по Quarto"}
+
+::: {style="font-size: 1.1em"}
+<br>
+
+[1. Обзор Quarto и примеры]{style="color: grey;"}
+
+<br>
+
+[2. Как начать работу в Quarto?]{style="color: grey;"}
+
+<br>
+
+[3. Структура документов в Quarto]{style="color: grey;"}
+
+<br>
+
+[4. Возможности для интернет-публикации]{style="color: grey;"}
+
+<br>
+
+[**5. Дополнительные материалы по Quarto**]{style="color: midnightblue;"}
+
+<br>
+
+[6. Выводы]{style="color: grey;"}
+:::
+
+## Страница Awesome Quarto {#страница-awesome-quarto data-menu-title="Страница Awesome Quarto"}
+
+![](images/Awesome%20Quarto.png)
+
+::: {style="text-align: center; margin-top: 1em"}
+[https://github.com/mcanouil/awesome-quarto](https://github.com/mcanouil/awesome-quarto){preview-link="false" style="text-align: center" target="_blank"}
+:::
+
+## Советы дня по Quarto {#советы-дня-по-quarto}
+
+![](images/tip%20a%20day.png)
+
+::: {style="text-align: center; margin-top: 1em"}
+[страница с советами](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/){preview-link="true" style="text-align: center"}
+:::
+
+## Приступая к работе с Quarto {#приступая-к-работе-с-quarto}
+
+![](images/getting%20started.png)
+
+::: {style="text-align: center; margin-top: 1em"}
+[страница workshop'а](https://jthomasmock.github.io/quarto-in-two-hours/){preview-link="true" style="text-align: center"} + [видео](https://www.youtube.com/live/yvi5uXQMvu4?feature=share){preview-link="false" style="text-align: center" target="_blank"}
+:::
+
+## От R Markdown к Quarto {#от-r-markdown-к-quarto}
+
+![](images/from%20rmarkdown%20to%20quarto.png)
+
+::: {style="text-align: center; margin-top: 1em"}
+[страница workshop'а](https://rstudio-conf-2022.github.io/rmd-to-quarto/){preview-link="true" style="text-align: center"}
+:::
+
+## Трюки и приемы в Quarto {#трюки-и-приемы-в-quarto}
+
+![](images/tips%20and%20tricks.png)
+
+::: {style="text-align: center; margin-top: 1em"}
+[страница с твитами советов](https://indrajeetpatil.github.io/RmarkdownTips/){preview-link="true" style="text-align: center"}
+:::
+
+## Советы по Quarto, найденные в Интернете {#советы-по-quarto-найденные-в-интернете}
+
+![](images/Quarto_tips.png)
+
+::: {style="text-align: center; margin-top: 1em"}
+[страница с советами от Sharon Machlis](https://apps.machlis.com/shiny/quartotips/){target="_blank"}, включающими Observable и Arquero JavaScript
+:::
+
+## Создание блога в Quarto {#создание-блога-в-quarto}
+
+![](images/building%20blogs.png)
+
+::: {style="text-align: center; margin-top: 1em"}
+[страница meetup'а](https://ivelasq.quarto.pub/building-a-blog-with-quarto/){preview-link="true" style="text-align: center"} + [видео](https://www.youtube.com/live/CVcvXfRyfE0?feature=share){preview-link="false" style="text-align: center" target="_blank"}
+:::
+
+## Hello, Quarto: A World of Possibilities {#hello-quarto-a-world-of-possibilities}
+
+{{< youtube Qrz2rUWM-uY >}}
+
+## Содержание {#содержание-5 data-menu-title="6. Выводы"}
+
+::: {style="font-size: 1.1em"}
+<br>
+
+[1. Обзор Quarto и примеры]{style="color: grey;"}
+
+<br>
+
+[2. Как начать работу в Quarto?]{style="color: grey;"}
+
+<br>
+
+[3. Структура документов в Quarto]{style="color: grey;"}
+
+<br>
+
+[4. Возможности для интернет-публикации]{style="color: grey;"}
+
+<br>
+
+[5. Дополнительные материалы по Quarto]{style="color: grey;"}
+
+<br>
+
+[**6. Выводы**]{style="color: midnightblue;"}
+:::
+
+## Почему стоит попробовать Quarto? {#почему-стоит-попробовать-quarto}
+
+-   [Quarto](https://quarto.org/) отлично подходит для публикации статей на сайтах, в блогах, а также отчетов в PDF, Word и в других форматах учеными, исследователями данных, студентами, может использоваться в образовательных целях.
+
+::: incremental
+-   Работа с большими проектами (например, книгами), кэширование, [freeze](https://quarto.org/docs/projects/code-execution.html#freeze).
+:::
+
+::: incremental
+-   Простота перехода от одного формата вывода документа к другому.
+:::
+
+::: incremental
+-   Возможность включения математических $\LaTeX$-формул в Word-документ, диаграмм.
+:::
+
+::: incremental
+-   Организация цитирования (как в визуальном редакторе, так и организация <br>ссылок через $BibTEX$, [CiteDrive](https://app.citedrive.com/) и т.д.).
+:::
+
+::: incremental
+-   [Расширенные макеты](https://quarto.org/docs/authoring/article-layout.html) для размещения элементов документа на странице.
+:::
+
+## Почему стоит попробовать Quarto? {#почему-стоит-попробовать-quarto-1}
+
+-   [Темы](https://quarto.org/docs/output-formats/html-themes.html) на основе [Bootstrap 5](https://themes.getbootstrap.com/), использование CSS и [Sass](https://sass-scss.ru/) для создания стилей документа.
+
+::: incremental
+-   Презентации на основе [reveal.js](https://revealjs.com/) (включающих в себя [Режим докладчика](https://quarto.org/docs/presentations/revealjs/#speaker-notes), <br> [Reveal Multiplex plugin](https://github.com/reveal/multiplex), множество различных тем).
+:::
+
+::: incremental
+-   Возможности локализации.
+:::
+
+::: incremental
+-   Встроенная поддержка [Observable JS](https://observablehq.com/@observablehq) и [Shiny](https://shiny.rstudio.com/).
+:::
+
+::: incremental
+-   Встраивание [LearningApps](https://learningapps.org/)-элементов для организации самотестирования <br>в учебном процессе.
+:::
+
+::: incremental
+-   Автоматизация рутинных процедур с помощью проектно-ориентированных рабочих процессов с [GitHub Actions](https://github.com/features/actions) и поддержка Quarto внутри контейнера <br>[Docker](https://www.docker.com/) для обслуживания HTML-документов и проектов.
+:::
+
+## Что еще кроме Quarto? {#что-еще-кроме-quarto}
+
+-   [R Markdown](https://rmarkdown.rstudio.com/) предлагает большой выбор библиотек для работы с документами, отчетами, презентациями и дэшбордами, например, `bookdown` и `blogdown`. <br>У части библиотек R нет аналогов в Quarto: `pagedown`, `flexdashboard`, `learnr`. <br>Об эквивалентах библиотек можно почитать на [странице сравнения](https://quarto.org/docs/faq/rmarkdown.html#i-use-x-bookdown-blogdown-etc..-what-is-the-quarto-equivalent).
+
+::: incremental
+-   Сравнению R Markdown и Quarto посвящена статья Yihui Xie: [With Quarto Coming, is R Markdown Going Away? No](https://yihui.org/en/2022/04/quarto-r-markdown/), см. также статью [We don't talk about Quarto. Until now!](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/) от Alison Hill.
+:::
+
+::: incremental
+-   Наряду с R Markdown существуют другие средства для создания публикаций и научных отчетов: [Jupyter Book](https://jupyterbook.org/en/stable/intro.html), [iPyPublish](https://pypi.org/project/ipypublish/), [Org-Mode](https://orgmode.org/), [Weave.jl](https://weavejl.mpastell.com/stable/).
+:::
+
+::: incremental
+-   Quarto развивается, свои предложения можно оставлять в разделе [дискуссии](https://github.com/quarto-dev/quarto-cli/discussions) на странице GitHub [quarto-cli](https://github.com/quarto-dev/quarto-cli).
+:::
+
+::: incremental
+-   Отметим, что [предварительные сборки](https://quarto.org/docs/download/prerelease.html) содержат интересные дополнения. Существуют [баги](https://github.com/quarto-dev/quarto-cli/issues) и недостатки Quarto, которые, в основном, быстро исправляются.
+:::
