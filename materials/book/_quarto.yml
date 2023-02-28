@@ -1,0 +1,107 @@
+project:
+  type: book
+  preview:
+    port: 1111
+
+lang: ru
+
+highlight-style: ally
+
+book:
+  title: "Анализ и моделирование данных"
+  subtitle: "с использованием языка программирования R"
+  abstract: "В книге рассмотрены современные подходы к практическим задачам, решаемым с помощью языка программирования **R**. Показаны основные принципы работы с табличными данными, различные методы визуализации данных, выполнение аналитических операций с географически распределенными данными и временными рядами. Особое внимание уделено алгоритмам машинного обучения и моделированию. В качестве основного технического инструмента выбран язык программирования **R** --- современная кросплатформенная среда для статистической обработки данных, работы с графикой и моделирования. Представленный в книге программный код дает возможность воспроизвести все расчеты самостоятельно. Более того, все приведенные примеры являются универсальными, модифицировав код нетрудно получить решение задачи для аналогичных данных."
+  site-url: "https://quarto-meetup-begin-book.netlify.app"
+  repo-url: "https://github.com/quarto-meetup-begin/materials/book"
+  publisher-place: "г. Санкт-Петербург"
+  url: "https://quarto-meetup-begin-book.netlify.app"
+  author:
+  - name:
+      given: Автор_имя
+      family: Автор
+      literal: А.А. Автор
+    orcid: 0000-0001-2222-3333
+    email: my_email@gmail.com
+    affiliation:
+      - name: Название организации
+  date: today
+  favicon: "favicon.png"
+  cover-image: title_page.png
+  google-analytics: "G-SS1LLXXZZZ"
+  navbar:
+    background: "#2860a1"
+    collapse-below: lg
+  sidebar:
+    collapse-level: 0
+    style: "floating"
+    background: white
+    foreground: dark
+  # logo: sidebar_logo.jpg
+  page-footer:
+    border: true
+    background: light
+    left: 
+      |
+      Название организации
+  chapters:
+    - index.qmd
+    - part: "Введение"
+      chapters:
+        - Intro Chapter/sources.qmd
+        - Intro Chapter/tool.qmd
+    - part: "Работа с табличными данными"
+      chapters:
+        - Table data Chapter/tidy data.qmd
+        - href: Table data Chapter/samples.qmd
+          text: Короткое название главы
+    - Conclusion Chapter/Conclusion.qmd        
+    - references.qmd
+  appendices:
+    - Appendicies/R install.qmd
+    - Appendicies/R.qmd
+    - Appendicies/Technical details.qmd 
+    
+reference-location: margin
+
+bibliography: references.bib
+
+csl: gost-r-7-0-5-2008-numeric.csl
+
+format:
+  html:
+    # темы:
+    # flatly
+    # simplex
+    #! cosmo
+    # zephyr
+    # litera
+    # spacelab
+    # cerulean
+    # yeti
+    # pulse
+    theme:
+      light: [flatly, theme.scss]
+      dark: [darkly, theme.scss]
+    code-fold: false
+    toc: true
+
+execute:
+  execute_notebooks: force
+  allow_errors: true
+  cache: true    
+
+crossref:
+  appendix-title: "Приложение"
+  appendix-delim: ":"
+
+
+crossref-apx-prefix: "Приложение"
+
+citation:
+  url: https://quarto-meetup-begin-book.netlify.app
+
+# переопределение перевода:
+# https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/language/_language-ru.yml 
+language:
+  title-block-affiliation-single: "Организация"
+  

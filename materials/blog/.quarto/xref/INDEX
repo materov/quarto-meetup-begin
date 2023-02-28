@@ -1,0 +1,21 @@
+{
+  "index.qmd": {
+    "index.html": "217fbe12"
+  },
+  "posts/post-with-code/index.qmd": {
+    "index.html": "68960fe2"
+  },
+  "posts/welcome/index.qmd": {
+    "index.html": "c883d2f4"
+  },
+  "about.qmd": {
+    "about.html": "226b934a"
+  },
+  "posts/statistics/index.qmd": {
+    "index.html": "84f2e7df",
+    "index.docx": "611aa8c5"
+  },
+  "posts/statistics/discussion.qmd": {
+    "discussion.html": "9eb14253"
+  }
+}

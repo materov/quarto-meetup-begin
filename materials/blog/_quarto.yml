@@ -1,0 +1,29 @@
+project:
+  type: website
+  preview:
+    port: 7777
+
+website:
+  title: "Блог"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+      - icon: mastodon
+        href: https://mastodon.social/@Mastodon
+format:
+  html:
+    theme:
+      light: [flatly, theme.scss]
+      dark: [darkly, theme.scss]
+
+language:
+  title-block-affiliation-single: "Организация"
+  section-title-abstract: "Аннотация для сайта"
+  section-title-references: "Список литературы"
+
+csl: gost-r-7-0-5-2008-numeric.csl
+

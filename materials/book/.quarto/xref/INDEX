@@ -1,0 +1,32 @@
+{
+  "index.qmd": {
+    "index.html": "4cd747bc"
+  },
+  "Intro Chapter/sources.qmd": {
+    "sources.html": "7da9466f"
+  },
+  "Intro Chapter/tool.qmd": {
+    "tool.html": "ceb898e5"
+  },
+  "Table data Chapter/tidy data.qmd": {
+    "tidy data.html": "64d29b6a"
+  },
+  "Table data Chapter/samples.qmd": {
+    "samples.html": "fcc6528c"
+  },
+  "Conclusion Chapter/Conclusion.qmd": {
+    "Conclusion.html": "777a3f4f"
+  },
+  "references.qmd": {
+    "references.html": "0e9d85e0"
+  },
+  "Appendicies/R install.qmd": {
+    "R install.html": "2359ccd1"
+  },
+  "Appendicies/R.qmd": {
+    "R.html": "d1b1e85d"
+  },
+  "Appendicies/Technical details.qmd": {
+    "Technical details.html": "bd532397"
+  }
+}

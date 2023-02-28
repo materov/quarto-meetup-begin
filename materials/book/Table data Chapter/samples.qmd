@@ -1,0 +1,97 @@
+# Пример главы с очень длинным названием, которое можно сделать в содержании гораздо короче {#sec-Sample}
+
+Ниже показан пример графики.
+
+```{r}
+#| label: fig-basemap
+#| warning: false
+#| message: false
+#| code-fold: true
+#| fig-cap: "Базовый график"
+library(ggplot2)
+
+ggplot(airquality, aes(Temp, Ozone)) + 
+  geom_point(color = "yellow") + 
+  geom_smooth(method = "loess", se = F) +
+  hrbrthemes::theme_ft_rc()
+```
+
+Далее идут формулы:
+
+$$
+ \sum_{n = 1}^\infty a_{nj} - b_j = \frac{1}{\sqrt{2}}.
+$$
+Пример теоремы:
+
+::: {#thm-line}
+
+## Прямая
+
+Уравнение любой прямой, называемое линейным уравнением, может быть записано в виде:
+
+$$
+y = mx + b.
+$$
+:::
+
+Ссылка: см. @thm-line.
+
+См. книгу @knuth84 для дополнительного обсуждения грамотного программирования.
+
+[Пример заметки на полях.]{.aside}
+
+Пример набора вкладок:
+
+::: {.panel-tabset}
+## R
+
+``` {.r}
+fizz_buzz <- function(fbnums = 1:50) {
+  output <- dplyr::case_when(
+    fbnums %% 15 == 0 ~ "FizzBuzz",
+    fbnums %% 3 == 0 ~ "Fizz",
+    fbnums %% 5 == 0 ~ "Buzz",
+    TRUE ~ as.character(fbnums)
+  )
+  print(output)
+}
+```
+
+## Python
+
+``` {.python}
+def fizz_buzz(num):
+  if num % 15 == 0:
+    print("FizzBuzz")
+  elif num % 5 == 0:
+    print("Buzz")
+  elif num % 3 == 0:
+    print("Fizz")
+  else:
+    print(num)
+```
+
+:::
+
+Пример «<span style="background-color: #FFFF00">выделения текста</span>».
+
+Пример рисунков.
+
+::: {#fig-Knuth layout="[[61, 39]]"}
+
+![](images/knuth1.jpg){#fig-Knuth1}
+
+![](images/knuth2.jpg){#fig-Knuth2}
+
+Очень длинная подпись к изображению, на котором представлены две фотографии Дональда Кнута
+:::
+
+Пример диаграммы.
+
+```{mermaid}
+flowchart LR
+  A[Прямой] --> B(Круглый)
+  B --> C{Решение}
+  C --> D[Результат 1]
+  C --> E[Результат 2]
+```

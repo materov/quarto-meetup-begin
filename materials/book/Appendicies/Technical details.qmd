@@ -1,0 +1,8 @@
+# Технические примечания {.appendix}
+
+* Книга созданна на основе [R Markdown](https://rmarkdown.rstudio.com/) и исполняемого кода в издательской системе [Quarto](https://quarto.org/) `r system("quarto --version", intern = TRUE)`. 
+
+* Для набора и верстки использовались [RStudio](https://www.rstudio.com/) и [Visual Studio Code](https://code.visualstudio.com/).
+
+* Публикация веб-версии книги осуществлена на платформе [Netlify](https://netlify.com/) способом, описанном в [руководстве](https://quarto.org/docs/publishing/netlify.html).
+
