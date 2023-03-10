@@ -201,14 +201,15 @@
 <span id="cb1-7">          text<span class="sc" style="color: #5E5E5E;">:</span> <span class="er" style="color: #AD0000;">|</span></span>
 <span id="cb1-8">            \usepackage[english,russian]{babel} </span>
 <span id="cb1-9">            \usepackage{fontspec}</span>
-<span id="cb1-10">            \setmainfont{Brill}</span>
-<span id="cb1-11">            <span class="co" style="color: #5E5E5E;"># шрифты можно указать свои</span></span>
-<span id="cb1-12">            \setmonofont{Iosevka}</span>
-<span id="cb1-13">            \addtokomafont{disposition}{\rmfamily}</span>
-<span id="cb1-14">editor<span class="sc" style="color: #5E5E5E;">:</span> visual</span>
-<span id="cb1-15"><span class="sc" style="color: #5E5E5E;">---</span></span>
-<span id="cb1-16"></span>
-<span id="cb1-17">Мой дядя самых честных правил</span></code></pre></div>
+<span id="cb1-10">            \addtokomafont{disposition}{\rmfamily}</span>
+<span id="cb1-11">editor<span class="sc" style="color: #5E5E5E;">:</span> visual</span>
+<span id="cb1-12">mainfont<span class="sc" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"Times New Roman"</span></span>
+<span id="cb1-13"><span class="co" style="color: #5E5E5E;"># шрифты можно указать свои</span></span>
+<span id="cb1-14"><span class="co" style="color: #5E5E5E;"># mainfont: "Brill"</span></span>
+<span id="cb1-15"><span class="co" style="color: #5E5E5E;"># mainfont: "Iosevka"</span></span>
+<span id="cb1-16"><span class="sc" style="color: #5E5E5E;">---</span></span>
+<span id="cb1-17"></span>
+<span id="cb1-18">Мой дядя самых честных правил.</span></code></pre></div>
 
 
 </section>
@@ -242,7 +243,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="https://quarto-meetup-begin-presentation.netlify.app" data-preview-link="false" style="text-align: center" target="_blank" title="Митап 4 марта 2023 г."><img src="https://www.myblogexample.io/posts/day_1/day_1.png" class="img-fluid figure-img"></a></p>
-<p></p><figcaption class="figure-caption">В презентации сделан обзор Quarto, показано, как установить и начать работу с Quarto. Также, будет кратко рассмотрена структура документов Quarto, возможности для интернет-публикации, сделано сравнение с существующими инструментами, даны ссылки на полезные материалы по Quarto.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">В презентации сделан обзор Quarto, показано, как установить и начать работу с Quarto. Также, кратко рассмотрена структура документов Quarto, возможности для интернет-публикации, сделано сравнение с существующими инструментами, даны ссылки на полезные материалы по Quarto.</figcaption><p></p>
 </figure>
 </div>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">

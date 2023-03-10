@@ -86,12 +86,13 @@ format:
           text: |
             \usepackage[english,russian]{babel} 
             \usepackage{fontspec}
-            \setmainfont{Brill}
-            # шрифты можно указать свои
-            \setmonofont{Iosevka}
             \addtokomafont{disposition}{\rmfamily}
 editor: visual
+mainfont: "Times New Roman"
+# шрифты можно указать свои
+# mainfont: "Brill"
+# mainfont: "Iosevka"
 ---
 
-Мой дядя самых честных правил
+Мой дядя самых честных правил.
 ```
