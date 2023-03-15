@@ -34,6 +34,10 @@ draft: false
 
 [^1]: для работы с некоторыми новыми функциями Quarto можно установить [экспериментальную версию](https://quarto.org/docs/download/prerelease.html){target="_blank"} Quarto CLI \>1.3; в митапе будет использоваться версия `r system("quarto --version", intern = TRUE)`, однако это не обязательно.
 
+## Видео второго митапа
+
+{{< youtube UbXTh2XX4PE >}}
+
 ::: {.callout-tip collapse="true"}
 ## Некоторые полезные расширения VS Code {#некоторые-полезные-расширения-vs-code}
 

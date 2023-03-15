@@ -32,7 +32,7 @@
     "href": "posts/day_2/index.html#основные-рабочие-инструменты",
     "title": "Основы создания веб-страниц, блогов и интерактивных книг в Quarto",
     "section": "Основные рабочие инструменты",
-    "text": "Основные рабочие инструменты\nДля полноценной работы будут необходимы следующие установленные инструменты.\n\nIDE RStudio Desktop и Visual Studio Code.\nУстановленный Quarto CLI версии &gt;1.21, а также quarto-vscode plugin.\nЗарегистрированная учетная запись на GitHub.\nЗарегистрированная учетная запись на Netlify.\nДля клонирования репозитория и работы с Git может понадобиться, например, GitHub Desktop или GitKraken.\n\n\n\n\n\n\n\nНекоторые полезные расширения VS Code\n\n\n\n\n\n\nGitLens\nProject Manager\nCode Spell Checker\nRussian - Code Spell Checker\nLanguageTool Extension\nЯзыковой пакет для русского языка для VS Code\nOfficial Dracula Theme\nColor Highlight\nVS Code Great Icons\nYAML\nvscode-pdf"
+    "text": "Основные рабочие инструменты\nДля полноценной работы будут необходимы следующие установленные инструменты.\n\nIDE RStudio Desktop и Visual Studio Code.\nУстановленный Quarto CLI версии &gt;1.21, а также quarto-vscode plugin.\nЗарегистрированная учетная запись на GitHub.\nЗарегистрированная учетная запись на Netlify.\nДля клонирования репозитория и работы с Git может понадобиться, например, GitHub Desktop или GitKraken."
   },
   {
     "objectID": "posts/day_2/index.html#примеры-документов-и-репозитории",
@@ -75,5 +75,12 @@
     "title": "Обзор и начало работы с Quarto",
     "section": "Видео презентации",
     "text": "Видео презентации"
+  },
+  {
+    "objectID": "posts/day_2/index.html#видео-второго-митапа",
+    "href": "posts/day_2/index.html#видео-второго-митапа",
+    "title": "Основы создания веб-страниц, блогов и интерактивных книг в Quarto",
+    "section": "Видео второго митапа",
+    "text": "Видео второго митапа\n\n\n\n\n\n\n\nНекоторые полезные расширения VS Code\n\n\n\n\n\n\nGitLens\nProject Manager\nCode Spell Checker\nRussian - Code Spell Checker\nLanguageTool Extension\nЯзыковой пакет для русского языка для VS Code\nOfficial Dracula Theme\nColor Highlight\nVS Code Great Icons\nYAML\nvscode-pdf"
   }
 ]
