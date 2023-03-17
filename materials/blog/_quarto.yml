@@ -20,10 +20,14 @@ format:
       light: [flatly, theme.scss]
       dark: [darkly, theme.scss]
 
+# переопределение перевода:
+# https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/language/_language-ru.yml 
 language:
   title-block-affiliation-single: "Организация"
   section-title-abstract: "Аннотация для сайта"
   section-title-references: "Список литературы"
 
+# https://github.com/citation-style-language/styles
+# Official repository for Citation Style Language (CSL) citation styles.
 csl: gost-r-7-0-5-2008-numeric.csl
 
