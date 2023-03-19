@@ -82,5 +82,19 @@
     "title": "Основы создания веб-страниц, блогов и интерактивных книг в Quarto",
     "section": "Видео второго митапа",
     "text": "Видео второго митапа\n\n\n\n\n\n\n\nНекоторые полезные расширения VS Code\n\n\n\n\n\n\nGitLens\nProject Manager\nCode Spell Checker\nRussian - Code Spell Checker\nLanguageTool Extension\nЯзыковой пакет для русского языка для VS Code\nOfficial Dracula Theme\nColor Highlight\nVS Code Great Icons\nYAML\nvscode-pdf"
+  },
+  {
+    "objectID": "posts/day_3/index.html#видео-третьего-митапа",
+    "href": "posts/day_3/index.html#видео-третьего-митапа",
+    "title": "reveal.js презентации в Quarto",
+    "section": "Видео третьего митапа",
+    "text": "Видео третьего митапа"
+  },
+  {
+    "objectID": "posts/day_3/index.html#пример-презентации",
+    "href": "posts/day_3/index.html#пример-презентации",
+    "title": "reveal.js презентации в Quarto",
+    "section": "Пример презентации",
+    "text": "Пример презентации\n\n\n\nПример reveal.js презентации / ссылка на репозиторий с примером презентации"
   }
 ]

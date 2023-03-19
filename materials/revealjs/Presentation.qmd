@@ -1,0 +1,292 @@
+---
+title: "Презентации в Quarto"
+subtitle: "Создавайте красивые интерактивные слайды с Reveal.js"
+format:
+  revealjs: 
+    slide-number: false
+    show-slide-number: all
+    # hash-type: number
+    # transition: convex
+    # zoom
+    # fade
+    # slide
+    # автоматическое перелистывание слайдов
+    # auto-slide: 6000
+    # loop: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    logo: images/logo.png
+    footer: <https://quarto-meetup-begin.netlify.app/>
+    highlight-style: github  
+revealjs-plugins:
+  - pointer
+  - attribution
+filters:
+  - roughnotation
+---
+
+# Начало работы
+
+## Презентации в Reveal.js
+
+Эта презентация покажет вам примеры того, что вы можете сделать с помощью Quarto и [Reveal.js](https://revealjs.com ), включая:
+
+-   Представление кода и уравнений в $LaTeX$
+-   Включение вычислений в вывод слайдов
+-   Фоны слайдов в виде изображений, видео и iframe
+-   Переходы и анимация
+
+...и многое другое
+
+::: {.notes}
+Заметки докладчика.
+:::
+
+## Слайд вне счетчика слайдов {visibility="uncounted" .smaller}
+
+При подготовке презентации иногда бывает полезно подготовить дополнительные слайды, которые у вас может быть время показать, а может и не быть. 
+
+Это легко сделать, добавив несколько слайдов в конце презентации, однако это означает, что индикатор выполнения показа и нумерация слайдов будут указывать на наличие дополнительных слайдов.
+
+##  {#slide3-id data-menu-title="Без заголовка"}
+
+Слайд без заголовка, но в навигации он отображается.
+
+## Слайд с фоном - Аквамарин {background-color="aquamarine"}
+
+## CSS классы
+
+```CSS
+:::{style="color: white; font-size: 150px; background-color:#a2d2ff;"}
+Текст
+:::
+```
+
+:::{style="color: white; font-size: 150px; background-color:#a2d2ff;"}
+Текст
+:::
+
+## Селекторы по CSS классу
+
+```{css}
+.newtext {
+  font-size: 70px;
+  color: red;
+}
+```
+
+```{.css}
+.newtext {
+  font-size: 70px;
+  color: red;
+}
+```
+
+```
+В HTML документе [селекторы по CSS классу]{.newtext} находят элементы с нужным классом. 
+```
+
+В HTML документе [селекторы по CSS классу]{.newtext} находят элементы с нужным классом. 
+
+## Пример пошагового списка
+
+::: {.incremental}
+
+- Шаг 1
+
+- Шаг 2
+
+- Шаг 3
+:::
+
+## Появление элементов
+
+Постепенное отображение текста и анимации с фрагментами:
+
+<br/>
+
+::: {.fragment .fade-in}
+Постепенное появление / затухание
+:::
+
+::: {.fragment .fade-up}
+Эффект скольжения
+:::
+
+::: {.fragment .fade-left}
+Скольжение слева
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+Затенение
+:::
+
+. . .
+
+::: {.fragment .strike}
+Зачеркивание
+:::
+
+. . .
+
+::: {.fragment .highlight-red}
+Подсветка красным
+:::
+
+## Наборы вкладок
+
+::: {.panel-tabset}
+
+## Код
+
+```{r}
+#| echo: fenced
+#| eval: false
+head(mtcars)
+```
+
+## Вывод
+
+```{r}
+#| eval: true
+#| echo: false
+head(mtcars)
+```
+
+:::
+
+## Анимация кода {auto-animate="true"}
+
+``` r
+# Define a server for the Shiny app
+function(input, output) {
+  
+  # Fill in the spot we created for a plot
+  output$phonePlot <- renderPlot({
+    # Render a barplot
+  })
+}
+```
+
+## Анимация кода {auto-animate="true"}
+
+``` r
+# Define a server for the Shiny app
+function(input, output) {
+  
+  # Fill in the spot we created for a plot
+  output$phonePlot <- renderPlot({
+    # Render a barplot
+    barplot(WorldPhones[,input$region]*1000, 
+            main=input$region,
+            ylab="Number of Telephones",
+            xlab="Year")
+  })
+}
+```
+
+## Подсветка кода
+
+-   Выделите конкретные строки для акцентирования
+-   Постепенно выделяйте дополнительные строки
+
+``` {.python code-line-numbers="4-5|7|10"}
+import numpy as np
+import matplotlib.pyplot as plt
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+::: footer
+Нижний колонтитул: [Подсветка кода](https://quarto.org/docs/presentations/revealjs/#line-highlighting)
+:::
+
+## Показ кода
+
+```{r}
+#| echo: false
+library(tidyverse)
+library(palmerpenguins)
+library(colorblindr)
+```
+
+```{r}
+#| echo: fenced
+ggplot(penguins, 
+       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
+  geom_point() +
+  scale_color_OkabeIto()
+```
+
+## Показ кода 
+
+### output-location: column
+
+```{r}
+#| echo: fenced
+#| output-location: column
+#| fig-width: 6
+#| fig-height: 4
+ggplot(penguins, 
+       aes(x = bill_length_mm, 
+           y = bill_depth_mm, 
+       color = species)) +
+  geom_point() +
+  scale_color_OkabeIto()
+```
+
+
+## Вставляйте обратный отсчет
+
+Используйте библиотеку `countdown` в R.
+
+```{r}
+#| echo: true
+countdown::countdown(minutes = 1, 
+                     seconds = 30, 
+                     left = 0) # <1>
+```
+
+::: {style="font-size: 0.8em"}
+
+1. положение таймера можно задавать, например, как 
+`bottom = 0`, `top = 0` или `left = 0`.
+:::
+
+::: {.notes}
+Заметки докладчика.
+:::
+
+## Сравнение с Xaringan
+
+![Xaringan vs Quarto](images/Xaringan.png)
+
+# Расширения
+
+## Attribution Plugin
+
+![Nepal](images/Nepal.png)
+
+::: {.attribution}
+Модель горного хребта в [rayvista](https://github.com/h-a-graham/rayvista)
+:::
+
+## Выделение текста
+
+-   При нажатии R [происходит выделение текста]{.rn}.
+
+-   Другой [пример выделения]{.rn rn-color=orange rn-type=circle}
+
+::: {.notes}
+Плагин https://github.com/EmilHvitfeldt/quarto-roughnotation
+:::
+
+## Вставка видео
+
+{{< youtube UbXTh2XX4PE >}}

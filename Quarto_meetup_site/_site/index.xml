@@ -21,6 +21,19 @@
 
 
 <p>Третий митап посвящен созданию презентаций в Quarto на основе <a href="https://quarto.org/docs/presentations/revealjs/" target="_blank">Revealjs</a>. <lord-icon speed="2.0" delay="1000" src="https://cdn.lordicon.com/etwtznjn.json" trigger="loop"></lord-icon></p>
+<section id="видео-третьего-митапа" class="level2">
+<h2 class="anchored" data-anchor-id="видео-третьего-митапа">Видео третьего митапа</h2>
+<p></p><div id="youtube-frame" style="position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0;"><iframe width="100%" height="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/f2LW7WGxdew" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p>
+</section>
+<section id="пример-презентации" class="level2">
+<h2 class="anchored" data-anchor-id="пример-презентации">Пример презентации</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://quarto-meetup-begin-revealjs.netlify.app" target="_blank"><img src="https://www.myblogexample.io/posts/day_3/presentation_sample.png" class="img-fluid figure-img"></a></p>
+<p></p><figcaption class="figure-caption">Пример reveal.js презентации / <a href="https://github.com/materov/quarto-meetup-begin/tree/main/materials/revealjs">ссылка на репозиторий</a> с примером презентации</figcaption><p></p>
+</figure>
+</div>
+</section>
 <section id="примеры-шаблонов-презентаций" class="level2">
 <h2 class="anchored" data-anchor-id="примеры-шаблонов-презентаций">Примеры шаблонов презентаций</h2>
 <table class="table">

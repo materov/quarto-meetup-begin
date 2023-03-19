@@ -9,6 +9,14 @@ draft: false
 
 Третий митап посвящен созданию презентаций в Quarto на основе [Revealjs](https://quarto.org/docs/presentations/revealjs/){target="_blank"}. {{< li etwtznjn trigger=loop speed=2.0 delay=1000 >}}
 
+## Видео третьего митапа
+
+{{< youtube f2LW7WGxdew >}}
+
+## Пример презентации
+
+[![Пример reveal.js презентации / <a href="https://github.com/materov/quarto-meetup-begin/tree/main/materials/revealjs">ссылка на репозиторий</a> с примером презентации](presentation_sample.png)](https://quarto-meetup-begin-revealjs.netlify.app){target="_blank"}
+
 ## Примеры шаблонов презентаций {#примеры-шаблонов-презентаций}
 
 | Автор           | Пример                                                                                                                      | Код                                                                                                                        |
