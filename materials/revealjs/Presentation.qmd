@@ -267,6 +267,12 @@ countdown::countdown(minutes = 1,
 
 ![Xaringan vs Quarto](images/Xaringan.png)
 
+## Встраивание LearningApps-тестов {data-menu-title="LearningApps"}
+
+<iframe src="https://learningapps.org/watch?app=8747665" style="border:0px;width:100%;height:500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
+
+</iframe>
+
 # Расширения
 
 ## Attribution Plugin
